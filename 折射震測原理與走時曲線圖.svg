@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1320 700" width="1320" height="700"
+     font-family="'Noto Sans TC','Microsoft JhengHei','PingFang TC','Heiti TC',sans-serif">
+  <defs>
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M25 0H0V25" fill="none" stroke="#4a6c8e" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <pattern id="soil" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="14" height="14" fill="#f1dfba"/>
+      <line x1="0" y1="0" x2="0" y2="14" stroke="#d8bd8a" stroke-width="1.2"/>
+    </pattern>
+    <pattern id="rock" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#b7c4d1"/>
+      <circle cx="6" cy="7" r="1.7" fill="#94a4b4"/>
+      <circle cx="15" cy="14" r="1.3" fill="#94a4b4"/>
+    </pattern>
+    <marker id="arrK" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#334155"/>
+    </marker>
+    <marker id="arrO" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#ea580c"/>
+    </marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#0284c7"/>
+    </marker>
+    <marker id="arrY" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#ca8a04"/>
+    </marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#16a34a"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1320" height="700" fill="#fbf9f4"/>
+  <rect x="0" y="0" width="1320" height="700" fill="url(#grid)"/>
+
+  <!-- header -->
+  <text x="40" y="42" font-size="23" font-weight="700" fill="#1e293b">折射震測原理與走時曲線圖（t - x 對照）</text>
+  <text x="40" y="66" font-size="12.5" fill="#64748b">Shot 109 實測初達波挑選 ｜ 測線 46 m ｜ 兩段式走時曲線：直達波（V₁）與臨界折射波（V₂）</text>
+
+  <!-- ================= PLOT ================= -->
+  <g>
+    <!-- gridlines -->
+    <g stroke="#cbd5e1" stroke-width="1">
+      <line x1="130" y1="100" x2="130" y2="500"/>
+      <line x1="282.2" y1="100" x2="282.2" y2="500"/>
+      <line x1="434.3" y1="100" x2="434.3" y2="500"/>
+      <line x1="586.5" y1="100" x2="586.5" y2="500"/>
+      <line x1="738.7" y1="100" x2="738.7" y2="500"/>
+      <line x1="130" y1="126.7" x2="830" y2="126.7"/>
+      <line x1="130" y1="180" x2="830" y2="180"/>
+      <line x1="130" y1="233.3" x2="830" y2="233.3"/>
+      <line x1="130" y1="286.7" x2="830" y2="286.7"/>
+      <line x1="130" y1="340" x2="830" y2="340"/>
+      <line x1="130" y1="393.3" x2="830" y2="393.3"/>
+      <line x1="130" y1="446.7" x2="830" y2="446.7"/>
+    </g>
+    <!-- axes -->
+    <line x1="130" y1="100" x2="130" y2="500" stroke="#334155" stroke-width="2.4"/>
+    <line x1="130" y1="500" x2="845" y2="500" stroke="#334155" stroke-width="2.4" marker-end="url(#arrK)"/>
+
+    <!-- x ticks -->
+    <g stroke="#334155" stroke-width="1.6">
+      <line x1="206.1" y1="500" x2="206.1" y2="508"/><line x1="358.3" y1="500" x2="358.3" y2="508"/>
+      <line x1="510.4" y1="500" x2="510.4" y2="508"/><line x1="662.6" y1="500" x2="662.6" y2="508"/>
+      <line x1="814.8" y1="500" x2="814.8" y2="508"/>
+    </g>
+    <g font-size="12" fill="#475569" text-anchor="middle">
+      <text x="130" y="522">0</text>
+      <text x="282.2" y="522">10</text>
+      <text x="434.3" y="522">20</text>
+      <text x="586.5" y="522">30</text>
+      <text x="738.7" y="522">40</text>
+      <text x="830" y="522">46</text>
+    </g>
+    <!-- y ticks -->
+    <g stroke="#334155" stroke-width="1.6">
+      <line x1="122" y1="446.7" x2="130" y2="446.7"/><line x1="122" y1="393.3" x2="130" y2="393.3"/>
+      <line x1="122" y1="340" x2="130" y2="340"/><line x1="122" y1="286.7" x2="130" y2="286.7"/>
+      <line x1="122" y1="233.3" x2="130" y2="233.3"/><line x1="122" y1="180" x2="130" y2="180"/>
+      <line x1="122" y1="126.7" x2="130" y2="126.7"/>
+    </g>
+    <g font-size="12" fill="#475569" text-anchor="end">
+      <text x="118" y="504">0</text>
+      <text x="118" y="450.7">20</text>
+      <text x="118" y="397.3">40</text>
+      <text x="118" y="344">60</text>
+      <text x="118" y="290.7">80</text>
+      <text x="118" y="237.3">100</text>
+      <text x="118" y="184">120</text>
+      <text x="118" y="130.7">140</text>
+    </g>
+    <text x="487" y="546" font-size="13.5" font-weight="700" fill="#334155" text-anchor="middle">支距 x（m）</text>
+    <text x="52" y="300" font-size="13.5" font-weight="700" fill="#334155" text-anchor="middle" transform="rotate(-90 52 300)">初達波走時 t（ms）</text>
+  </g>
+
+  <!-- Ti drop line -->
+  <line x1="130" y1="391.5" x2="130" y2="500" stroke="#64748b" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="140" y="420" font-size="11.5" fill="#64748b">Ti = 40.7 ms</text>
+
+  <!-- Xc / tc drop lines -->
+  <line x1="358.3" y1="377.3" x2="358.3" y2="500" stroke="#ca8a04" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <line x1="130" y1="377.3" x2="358.3" y2="377.3" stroke="#ca8a04" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="358.3" y="522" font-size="13" font-weight="700" fill="#ca8a04" text-anchor="middle">Xc = 15.0 m</text>
+  <text x="124" y="373" font-size="13" font-weight="700" fill="#ca8a04" text-anchor="end">tc = 46 ms</text>
+
+  <!-- direct wave (V1) -->
+  <line x1="130" y1="500" x2="830" y2="123.7" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+  <!-- head wave (V2) -->
+  <line x1="130" y1="391.5" x2="830" y2="348.2" stroke="#0284c7" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- first-arrival picks -->
+  <g fill="#ea580c" stroke="#fbf9f4" stroke-width="1.6">
+    <circle cx="130" cy="500" r="4.4"/>
+    <circle cx="160.4" cy="483.6" r="4.4"/>
+    <circle cx="190.9" cy="467.3" r="4.4"/>
+    <circle cx="221.3" cy="450.9" r="4.4"/>
+    <circle cx="251.7" cy="434.6" r="4.4"/>
+    <circle cx="282.2" cy="418.2" r="4.4"/>
+    <circle cx="312.6" cy="401.8" r="4.4"/>
+    <circle cx="343" cy="385.5" r="4.4"/>
+  </g>
+  <g fill="#0284c7" stroke="#fbf9f4" stroke-width="1.6">
+    <circle cx="373.5" cy="376.4" r="4.4"/>
+    <circle cx="403.9" cy="374.5" r="4.4"/>
+    <circle cx="434.3" cy="372.6" r="4.4"/>
+    <circle cx="464.8" cy="370.7" r="4.4"/>
+    <circle cx="495.2" cy="368.8" r="4.4"/>
+    <circle cx="525.6" cy="367" r="4.4"/>
+    <circle cx="556.1" cy="365.1" r="4.4"/>
+    <circle cx="586.5" cy="363.2" r="4.4"/>
+    <circle cx="647.4" cy="359.4" r="4.4"/>
+    <circle cx="677.8" cy="357.6" r="4.4"/>
+    <circle cx="708.2" cy="355.7" r="4.4"/>
+    <circle cx="738.7" cy="353.8" r="4.4"/>
+    <circle cx="769.1" cy="351.9" r="4.4"/>
+    <circle cx="799.5" cy="350" r="4.4"/>
+    <circle cx="830" cy="348.2" r="4.4"/>
+  </g>
+
+  <!-- markers -->
+  <circle cx="358.3" cy="377.3" r="8" fill="#ca8a04" stroke="#fbf9f4" stroke-width="2.4"/>
+  <circle cx="616.9" cy="361.3" r="7.5" fill="#16a34a" stroke="#fbf9f4" stroke-width="2.4"/>
+  <line x1="616.9" y1="361.3" x2="616.9" y2="500" stroke="#16a34a" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="628" y="384" font-size="12.5" font-weight="700" fill="#16a34a">遠端驗證點（32 m, 52 ms）</text>
+
+  <!-- line labels -->
+  <text x="585" y="285" font-size="14" font-weight="700" fill="#ea580c">直達波 t = x / V₁ ｜ V₁ = 326 m/s</text>
+  <text x="625" y="330" font-size="14" font-weight="700" fill="#0284c7">臨界折射波（首波）V₂ = 2,833 m/s</text>
+
+  <!-- legend -->
+  <g>
+    <rect x="146" y="108" width="306" height="106" rx="7" fill="#fff" fill-opacity="0.92" stroke="#cbd5e1" stroke-width="1.4"/>
+    <line x1="160" y1="128" x2="194" y2="128" stroke="#ea580c" stroke-width="3"/>
+    <circle cx="177" cy="128" r="3.6" fill="#ea580c" stroke="#fff" stroke-width="1.2"/>
+    <text x="204" y="132" font-size="12" fill="#334155">直達波（近支距初達波，V₁）</text>
+    <line x1="160" y1="152" x2="194" y2="152" stroke="#0284c7" stroke-width="3"/>
+    <circle cx="177" cy="152" r="3.6" fill="#0284c7" stroke="#fff" stroke-width="1.2"/>
+    <text x="204" y="156" font-size="12" fill="#334155">臨界折射波（遠支距初達波，V₂）</text>
+    <circle cx="177" cy="176" r="6" fill="#ca8a04"/>
+    <text x="204" y="180" font-size="12" fill="#334155">超越點（Xc = 15.0 m, tc = 46 ms）</text>
+    <circle cx="177" cy="199" r="6" fill="#16a34a"/>
+    <text x="204" y="203" font-size="12" fill="#334155">遠端驗證點（32 m, 52 ms）</text>
+  </g>
+
+  <!-- ================= NOTES ================= -->
+  <g font-size="12.5" fill="#475569">
+    <text x="130" y="582">① 支距 0 – 15 m：直達波（橘）先到，沿地表近路傳播，斜率 = 1/V₁ → V₁ = 15 m / 0.046 s = 326 m/s</text>
+    <text x="130" y="606">② 支距 &gt; 15 m：臨界折射波／首波（藍）先到，走深部基盤，斜率 = 1/V₂ → V₂ = 17 m / 0.006 s = 2,833 m/s</text>
+    <text x="130" y="630">③ 交會點 Xc = 15.0 m、tc = 46 ms；截距時間 Ti = 40.7 ms = 2h·cos θc / V₁</text>
+    <text x="130" y="654">④ 近支距 &lt; 8 m 受地滾波（127–160 m/s）干擾，自動演算法易誤抓波峰 → 採人工眼挑初達波</text>
+    <text x="130" y="678">初達波挑點（24 點）依 Shot 109 實測數據重建，用以說明「兩段式」走時曲線之成因</text>
+  </g>
+
+  <!-- ================= INSET : RAY PATH ================= -->
+  <g>
+    <rect x="870" y="95" width="420" height="470" rx="9" fill="#fff" fill-opacity="0.94" stroke="#cbd5e1" stroke-width="1.6"/>
+    <text x="890" y="122" font-size="14.5" font-weight="700" fill="#1e293b">折射波射線路徑示意（雙層模型）</text>
+    <text x="890" y="143" font-size="11.5" fill="#64748b">h = 6.68 m ｜ θc = 6.61° ｜ V₁ = 326 m/s ｜ V₂ = 2,833 m/s</text>
+
+    <!-- layers -->
+    <rect x="905" y="215" width="360" height="100" fill="url(#soil)"/>
+    <rect x="905" y="315" width="360" height="210" fill="url(#rock)"/>
+    <line x1="905" y1="315" x2="1265" y2="315" stroke="#334155" stroke-width="2.6"/>
+    <line x1="905" y1="215" x2="1265" y2="215" stroke="#7c2d12" stroke-width="3"/>
+
+    <!-- direct wave -->
+    <line x1="935" y1="205" x2="1160" y2="205" stroke="#ea580c" stroke-width="3" marker-end="url(#arrO)"/>
+    <text x="1047" y="196" font-size="12" font-weight="700" fill="#ea580c" text-anchor="middle">直達波（V₁）</text>
+
+    <!-- head wave ray path -->
+    <path d="M935,215 L946.6,315 L1148.4,315 L1160,215" fill="none" stroke="#0284c7" stroke-width="2.8"
+          stroke-linejoin="round" marker-end="url(#arrB)"/>
+    <text x="1047" y="305" font-size="11.5" font-weight="700" fill="#0284c7" text-anchor="middle">臨界折射波（首波）</text>
+
+    <!-- critical angle -->
+    <path d="M935,170 A45,45 0 0 1 940.2,170.3" fill="none" stroke="#dc2626" stroke-width="1.8"/>
+    <text x="946" y="166" font-size="11.5" font-weight="700" fill="#dc2626">θc = 6.61°</text>
+    <text x="928" y="206" font-size="13" font-weight="700" fill="#dc2626" text-anchor="end">S</text>
+    <text x="1168" y="206" font-size="13" font-weight="700" fill="#dc2626">R</text>
+    <circle cx="935" cy="215" r="4.5" fill="#dc2626" stroke="#fff" stroke-width="1.4"/>
+    <circle cx="1160" cy="215" r="4.5" fill="#dc2626" stroke="#fff" stroke-width="1.4"/>
+
+    <!-- h dimension -->
+    <line x1="895" y1="215" x2="895" y2="315" stroke="#16a34a" stroke-width="2.2"
+          marker-start="url(#arrG)" marker-end="url(#arrG)"/>
+    <text x="902" y="332" font-size="12" font-weight="700" fill="#16a34a">h = 6.68 m</text>
+
+    <!-- Xc dimension -->
+    <line x1="935" y1="362" x2="1160" y2="362" stroke="#ca8a04" stroke-width="2.2"
+          marker-start="url(#arrY)" marker-end="url(#arrY)"/>
+    <text x="1047" y="382" font-size="12.5" font-weight="700" fill="#ca8a04" text-anchor="middle">Xc = 15.0 m</text>
+
+    <!-- layer labels -->
+    <text x="1050" y="250" font-size="12" font-weight="700" fill="#7c2d12" text-anchor="middle">風化表土層 V₁ = 326 m/s</text>
+    <text x="1050" y="422" font-size="12" font-weight="700" fill="#1e293b" text-anchor="middle">堅硬基盤 V₂ = 2,833 m/s</text>
+    <text x="890" y="508" font-size="11.5" fill="#475569">射線關係：SP = QR = h / cos θc；PQ = Xc − 2h·tan θc = 13.45 m</text>
+    <text x="890" y="528" font-size="11.5" fill="#475569">截距時間 Ti = 2h·cos θc / V₁ = 40.7 ms；h = (Xc/2)·√[(V₂−V₁)/(V₂+V₁)] = 6.68 m</text>
+  </g>
+</svg>
